@@ -1,18 +1,20 @@
-# CSV Profiler
-
-A simple CSV profiling tool with:
-- Command Line Interface (CLI)
-- Streamlit Web GUI
-
----
-
 ## Setup
-
-Create a virtual environment and install dependencies:
-
-```
-uv venv -p 3.11
+~~~
+uv venv -p 3.112
 uv pip install -r requirements.txt
-```
-$env:PYTHONPATH="src"
-uv run python -m csv_profiler.cli data/sample.csv --out-dir outputs
+~~~
+## Run CLI
+~~~
+If you have a src/ folder:
+Mac/Linux: export PYTHONPATH=src
+Windows: $env:PYTHONPATH="src"
+uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
+~~~
+
+## Run GUI
+~~~
+If you have a src/ folder:12
+Mac/Linux: export PYTHONPATH=src13
+Windows: $env:PYTHONPATH="src"14
+uv run streamlit run app.py
+~~~~
